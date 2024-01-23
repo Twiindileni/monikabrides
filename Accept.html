@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
@@ -18,7 +18,7 @@
 
     #content-box {
       background-color: rgba(255, 255, 255, 0.8);
-      padding: 20px;
+      padding: 5px;
       border-radius: 10px;
       text-align: center;
     }
@@ -66,30 +66,55 @@
       // Replace 'your_shirt_page.html' with the actual path to the page displaying Day 2 shirts
       window.location.href = 'your_shirt_page.html';
     }
-  </script>
+ 
+ 
+ 
+ 
+ 
+ </script>
 </head>
 <body>
-  <div id="content-box">
+ 
+ 
+ 
+ 
+ <div id="content-box">
    
    
    
    
    
-   <p><h1>Dear Friend</h1>
-        I hope this message finds you well. As the excitement for our big day continues to grow, I find myself reflecting on the meaningful relationships that have shaped my life. It is with great joy and honor that I extend to you a special invitation to stand by my side as a groomsman at our wedding.
-        Your friendship has been a source of strength, laughter, and support throughout the years, and I cannot imagine celebrating this milestone without you. Your presence will add a unique and cherished element to our wedding festivities.
+   <p></p><h1>Dear Friend</h1>
+        I hope this message finds you well. As the excitement for our 
+big day continues to grow, I find myself reflecting on the meaningful 
+relationships that have shaped my life. It is with great joy and honor 
+that I extend to you a special invitation to stand by my side as a 
+bridesmaid at our wedding.
+        Your friendship has been a source of strength, laughter, and 
+support throughout the years, and I cannot imagine celebrating this 
+milestone without you. Your presence will add a unique and cherished 
+element to our wedding festivities.
         
-        The date is set for 23 August 2024, and I would be honored if you would accept this role as one of my groomsmen. Your willingness to share in this momentous occasion would mean the world to me.
+        The date is set for 23 August 2024, and I would be honored if 
+you would accept this role as one of my bridesmaid. Your willingness to 
+share in this momentous occasion would mean the world to me.
         
-        I understand the responsibilities that come with being a groomsman, and I want you to know that your presence is the most important thing. Your support and friendship are what truly matter to me.
+        I understand the responsibilities that come with being a 
+bridesmaid, and I want you to know that your presence is the most 
+important thing. Your support and friendship are what truly matter to 
+me.
         
-        If you're able and willing to be a part of our wedding party, please let me know at your earliest convenience. I am looking forward to creating beautiful memories together and celebrating this special day with you.
+        If you're able and willing to be a part of our wedding party, 
+please let me know at your earliest convenience. I am looking forward to
+ creating beautiful memories together and celebrating this special day 
+with you.
         
-        Thank you for considering this request, and I hope we can share in the joy of this significant event.
+        Thank you for considering this request, and I hope we can share 
+in the joy of this significant event.
         
         Best Regards,
         
-        Monika</p>
+        Monika<p></p>
 
     <button id="whatsapp-button" onclick="redirectToWhatsApp()">Accept</button>
     <button id="view-card-button" onclick="redirectToWeddingCard()">View Card</button>
@@ -103,7 +128,7 @@
       </thead>
       <tbody>
         <tr>
-          <td><h1>$2600.00</h1></td>
+          <td><h1>N$2600.00</h1></td>
         </tr>
       </tbody>
     </table>
@@ -117,5 +142,44 @@
       <!-- Add more items as needed -->
     </ul>
   </div>
-</body>
-</html>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
