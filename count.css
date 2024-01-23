@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+.fireworks-container {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.firework {
+    position: absolute;
+    width: 10px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    animation: fireworks 2s infinite alternate;
+}
+
+@keyframes fireworks {
+    0% {
+        transform: translateY(0) rotate(45deg);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-100px) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+h1 {
+    font-size: 3em;
+    margin-top: 50px;
+}
+
+/* Add this style for the countdown */
+.countdown-container {
+    text-align: center;
+    margin-top: 20px;
+    color: #1000f0;
+}
+
+#countdown {
+    font-size: 1.5em;
+}
+/* Add this style for the countdown blocks */
+.countdown-block {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.transparent-block {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.countdown-container {
+    text-align: center;
+    margin-top: 20px;
+    color: #aa0000;
+}
+
+#countdown {
+    font-size: 1.5em;
+}

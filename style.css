@@ -1,0 +1,56 @@
+/* style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(1px); /* Adjust the blur strength as needed */
+}
+
+.invitation-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+#acceptButton1,
+#acceptButton2 {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #a80c5a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#acceptButton1:hover,
+#acceptButton2:hover {
+    background-color: #682e4e;
+}
+
+#acceptButton1:active,
+#acceptButton2:active {
+    background-color: #3c8039;
+}
+
